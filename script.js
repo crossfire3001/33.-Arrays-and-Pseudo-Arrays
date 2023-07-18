@@ -56,6 +56,24 @@ const supers = [
 ];
 
 // перебор элементов массива
-for(let value of supers) {
-    console.log(value);
+for (let value of supers) {
+  console.log(value); // можно использовать break и continue
 }
+
+// 5
+
+supers[99] = 0;
+console.log(supers.length); // 100
+console.log(supers);
+
+// 6
+
+const photon = ["man", "emc", "T", 18];
+
+// самый часто использующийся метод массивов
+photon.forEach(function (item, index, photon) {
+  console.log(`${index}: ${item} внутри массива ${photon}`);
+});
+
+// 7
+
