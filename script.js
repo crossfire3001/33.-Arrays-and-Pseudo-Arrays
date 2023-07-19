@@ -76,4 +76,19 @@ photon.forEach(function (item, index, photon) {
 });
 
 // 7
+// методы: split, join и sort
 
+const otb = prompt("", "");
+const products = otb.split(", ");
+products.sort();
+console.log(products.join("; "));
+
+// 8
+
+const numbes = [2, 3, 10, 111, 332, 19, 1];
+numbes.sort(compareNumbers);
+console.log(numbes);
+
+function compareNumbers(a, b) {
+  return a - b;
+}
